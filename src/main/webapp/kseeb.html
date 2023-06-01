@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>KSEEB Staff Portal</title>
+<style type="text/css">
+#butt {
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.42857143;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+#cen {
+	margin: 0;
+	padding: 50px;
+	position: static;
+}
+
+#container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 6% 25% 20px 25%;
+	border: 5px groove gray;
+	background-color: rgb(180, 180, 180);
+	border: 5px solid white;
+	box-shadow: 1px 1px 1px 1px #888888;
+}
+
+body {
+	background-color: rgb(234, 250, 241);
+}
+</style>
+</head>
+<body>
+
+	<div style="background-color: rgb(180, 180, 180); color: #fff;">
+		<div style="text-align: center;">
+			<h3 style="color: black; font-weight: normal;">Karnataka School
+				Examination and Assessment Board</h3>
+			<h4 style="font-weight: normal;">(SSLC Main Examination Results)</h4>
+		</div>
+	</div>
+	<a href="index.jsp"><button id="butt">Home Page</button></a>
+
+	<div id="container">
+		<div id="cen">
+			<a href="insert.html"><button id="butt">Insert Student
+					Data</button></a>
+		</div>
+		<div id="cen">
+			<a href="updatepage.html"><button id="butt">Update
+					Student Data</button></a>
+		</div>
+		<div id="cen">
+			<a href="delete.html"><button id="butt">Delete Student
+					Data</button></a>
+		</div>
+		<div id="cen">
+			<form action="fetchall" method="post">
+				<a href="fetchall.jsp"><button id="butt">Fetch All
+						Student Data</button></a>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

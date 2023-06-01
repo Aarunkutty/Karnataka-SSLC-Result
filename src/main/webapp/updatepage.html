@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Update Data</title>
+<style type="text/css">
+body {
+	background-color: rgb(254, 249, 231);
+}
+
+#intp {
+	width: 500px;
+	font-family: inherit;
+	font-size: inherit;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: inherit;
+}
+
+h2 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.42857143;
+	font-weight: bold;
+}
+
+label {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.42857143;
+	font-weight: bold;
+}
+
+span {
+	font-size: 20px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.42857143;
+	font-weight: bold;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#butt {
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.42857143;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+table {
+	margin-right: auto;
+	margin-left: auto;
+}
+</style>
+</head>
+<body>
+	<div style="background-color: rgb(180, 180, 180); color: #fff;">
+		<div style="text-align: center;">
+			<h3 style="color: black; font-weight: normal;">Karnataka School
+				Examination and Assessment Board</h3>
+			<h4 style="font-weight: normal;">(SSLC Main Examination Results)</h4>
+		</div>
+	</div>
+	<a href="index.jsp"><button id="butt" style="position: absolute;">Home
+			Page</button></a>
+
+	<span style="margin: auto; display: table;">Update Data</span>
+
+	<div>
+		<br>
+	</div>
+	<form action="updatepage" id="updat" method="post">
+		<table>
+			<tr>
+				<td><label>Register Number :</label></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="register" required="required"
+					id="intp" maxlength="11" placeholder="Enter Register No"
+					oninvalid="this.setCustomValidity('Enter Register Number Here')"
+					oninput="this.setCustomValidity('')"></td>
+			</tr>
+
+			<tr>
+				<td>
+					<button form="updat" id="butt">Update Id</button>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="kseeb.html"><button type="button" id="butt"
+							onclick="goBack()">Cancel</button></a>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
